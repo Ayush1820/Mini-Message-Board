@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mini Message Board</h1>
+        </div>
+        <div class="url">
+            <a href="/new">Click Me To Type Message</a>
+        </div>
+        <div class="message-container">
+            <% message.forEach(message=>{ %>
+                <div class="User">
+                    <b>UserName:</b>
+                    <%= message.User %>
+                </div><br>
+                <div class="Time">
+                    <b>Time:</b>
+                    <%= message.Time %>
+                </div><br>
+                <div class="mess">
+                    <b>Message:</b>
+                    <%= message.Message %>
+                        <hr>
+                        <hr> <br><br>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+</body>
+
+</html>

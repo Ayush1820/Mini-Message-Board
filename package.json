@@ -1,0 +1,19 @@
+{
+  "name": "my-message",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon run main/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "path": "^0.12.7"
+  }
+}
